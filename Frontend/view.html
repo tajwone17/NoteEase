@@ -10,22 +10,19 @@
     <div class="container">
       <h1>NoteBook</h1>
       <div class="buttons">
-        <a href="index.html"><button>Create</button></a>
-        <a href="view.html"><button>View</button></a>
-        <a href="update.html"><button>Update</button></a>
-        <a href="delete.html"><button>Delete</button></a>
+        <a href="index.html"><button class="create-btn">Create</button></a>
+        <a href="view.html"><button class="view-btn active">View</button></a>
+        <a href="update.html"><button class="update-btn">Update</button></a>
+        <a href="delete.html"><button class="delete-btn">Delete</button></a>
       </div>
+      
       <div class="form-container">
         <h2>View Notes</h2>
-        <div class="note">
-          <h3>Sample Note Title</h3>
-          <p>Description of the note goes here...</p>
-        </div>
-        <div class="note">
-          <h3>Another Note</h3>
-          <p>Another note description...</p>
-        </div>
+        <div id="notes-container"></div>
+        <!-- This will hold all the notes -->
       </div>
     </div>
+    <script src="view.js"></script>
+    <!-- Link to the script that handles fetching and displaying notes -->
   </body>
 </html>

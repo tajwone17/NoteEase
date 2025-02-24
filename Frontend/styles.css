@@ -90,3 +90,40 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background: darkblue;
 }
+/* Add these to your styles.css */
+
+/* Add this to styles.css to style the notes */
+.note {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.note h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.note h4 {
+  font-size: 16px;
+  color: #4caf50;
+}
+
+.note p {
+  font-size: 14px;
+  color: #555;
+}
+/* Active Button Styling */
+.buttons button.active {
+  border: 2px solid #fff; /* White border to highlight */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transform: scale(1.05); /* Slightly larger to indicate it's active */
+  transition: transform 0.3s ease;
+}
+
+.buttons button.active:hover {
+  background: inherit; /* Keep the active button's color unchanged on hover */
+  transform: scale(1.05); /* Keep it enlarged even on hover */
+}
